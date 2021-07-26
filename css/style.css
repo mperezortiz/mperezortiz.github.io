@@ -20,7 +20,7 @@ body {
     line-height : 1.8em;
     color       : #3d3d50;
     font-weight : 300;
-    background  : url("../img/pattern-bg2.png") fixed;
+    background  : url("../img/pattern-bg3.png") fixed;
     }
 
 /* --------------------------------------
@@ -71,7 +71,7 @@ h6 {
  * LINK STYLE
  *------------------------------------------*/
 a {
-    color              : #FFC107;
+    color              : #009c0d;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -124,13 +124,13 @@ ul {
 
 /*btn-primary*/
 .btn-primary {
-    background-color : #FFC107;
+    background-color : #2d83bd;
     }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active:focus {
-    background : #ff9800;
+    background : #3d64cf;
     }
 
 /*btn-default*/
@@ -345,7 +345,7 @@ button:focus,
     line-height   : 33px;
     text-align    : center;
     border-radius : 2px;
-    border        : 2px solid #eeeeee;
+    border        : 2px solid #0a0000;
     }
 
 .social-icon li a:hover {
@@ -386,7 +386,7 @@ button:focus,
     }
 
 .progress-item .progress-bar {
-    background-color : #FFC107;
+    background-color : #49cfae;
     box-shadow       : none;
     text-align       : right;
     }
