@@ -16,10 +16,10 @@ Author: themehippo.com
 
 body {
     font-family : 'Hind', sans-serif;
-    font-size   : 15px;
+    font-size   : 16px;
     line-height : 1.8em;
     color       : #3d3d50;
-    font-weight : 300;
+    font-weight : 600;
     background  : url("../img/pattern-bg3.png") fixed;
     }
 
@@ -33,9 +33,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 h1 {
-    font-size   : 26px;
+    font-size   : 25px;
     line-height : 1.8em;
-    font-weight : 700;
+    font-weight : 800;
     }
 
 h2 {
@@ -71,7 +71,7 @@ h6 {
  * LINK STYLE
  *------------------------------------------*/
 a {
-    color              : #009c0d;
+    color              : #6cd675;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -90,7 +90,7 @@ a:active {
 a:hover,
 a:focus {
     text-decoration : none;
-    color           : #ff9800;
+    color           : #a200ff;
     }
 
 p {
@@ -254,7 +254,7 @@ button:focus,
 
 .section-title h2 {
     margin-bottom : 5px;
-    color         : #bebece;
+    color         : #000000;
     }
 
 /*-----------------------------
@@ -333,23 +333,23 @@ button:focus,
 
 .social-icon li {
     display : inline-block;
-    margin  : 0 2px;
+    margin  : 0 60px;
     }
 
 .social-icon li a {
     display       : block;
-    font-size     : 12px;
+    font-size     : 15px;
     color         : #333333;
-    width         : 100px;
+    width         : 200px;
     height        : 34px;
     line-height   : 33px;
     text-align    : center;
-    border-radius : 2px;
-    border        : 2px solid #0a0000;
+    border-radius : 3px;
+    border        : 3px solid #735dd3;
     }
 
 .social-icon li a:hover {
-    border-color : #cccccc;
+    border-color : #a6f08f;
     }
 
 /*-------------------
