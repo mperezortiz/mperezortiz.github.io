@@ -19,7 +19,7 @@ body {
     font-size   : 16px;
     line-height : 1.8em;
     color       : #3d3d50;
-    font-weight : 600;
+    font-weight : 500;
     background  : url("../img/pattern-bg3.png") fixed;
     }
 
@@ -71,7 +71,7 @@ h6 {
  * LINK STYLE
  *------------------------------------------*/
 a {
-    color              : #6cd675;
+    color              : #68bd95;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
