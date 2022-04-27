@@ -22,7 +22,7 @@ html {
 
 body {
   font-family: "Work Sans", Arial, sans-serif;
-  background: #F4F9F4;
+  background: #ffffff;
   margin-left: calc(50% + 5rem);
   margin-right: 8rem;
   font-size: 16px;
@@ -52,7 +52,7 @@ input, textarea, p {
   color: #fff; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300 !important; }
+  font-weight: 200 !important; }
 
 a {
   -webkit-transition: .3s all ease;
@@ -129,7 +129,7 @@ a {
         margin: 0 .5rem;
         display: block;
         color: rgba(0, 0, 0, 0.4);
-        font-weight: 700;
+        font-weight: 500;
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: .2em;
