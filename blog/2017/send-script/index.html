@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Alex Hughes | sending code</title>
+  <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/blog/2017/send-script/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Alex</strong> Hughes
+    </span>
+    
+
+    <nav class="site-nav">
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="/">about</a>
+
+        <!-- Blog -->
+        <a class="page-link" href="/blog/">blog</a>
+
+        <!-- Pages -->
+        
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="/projects/">projects</a>
+          
+        
+          
+            <a class="page-link" href="/publications/">publications</a>
+          
+        
+          
+        
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">sending code</h1>
+    <p class="post-meta">July 18, 2017</p>
+  </header>
+
+  <article class="post-content">
+    <p>Ok! It looks like this sending pipeline is working.</p>
+
+<p>The standard hosting paradigm for <code class="highlighter-rouge">github.io</code> sites appears to be sites that are built for project pages. This means that sites are hosted off the <code class="highlighter-rouge">gh-pages</code> branch of the repository. And, this makes sense for a lot of reasons. If you’re developing a project where the core codebase does something different than make a webpage, you might want to keep all the <code class="highlighter-rouge">ruby</code> nonsense off the main branch. After all, the webpage is mostly going to be dedicated to the important task of documenting the code – a relatively more static process – than the code development <em>per se</em>.</p>
+
+<p>Because this is the more common flow, most of the deploy scripts that were around were built toward branch switching for hosting. Generally, these scripts were building the ruby site, moving the files from <code class="highlighter-rouge">./_site/</code> back to the project root, and then in a really surprising move <em>vaporizing all the ruby files</em>. I killed my sites at least four times trying to figure out what was happening in these scripts; let me document this for you here.</p>
+
+<p>When branch switching – say from <code class="highlighter-rouge">master</code> to <code class="highlighter-rouge">gh-pages</code> – changes and deletions are sandboxed to the branch that you’re on. So, if you develop your <code class="highlighter-rouge">_pages</code> and <code class="highlighter-rouge">_posts</code> in the <code class="highlighter-rouge">master</code> branch, then so long as you build on the <code class="highlighter-rouge">gh-pages</code> branch, you can do a lot of cleaning to bring the site onto GitHub.</p>
+
+<p>This is important because if you serve your site using anything that isn’t the <em>most</em> vanilla version of <code class="highlighter-rouge">ruby</code>, the GitHub servers are not going to build your site. The problem that I ran into was that am using a page that has a <code class="highlighter-rouge">bibliography</code> liquid tag – which is not tag that is supported on the GitHub servers. So, to make compile the page, I have to compile using ruby on my local machine and serve <em>only the files that are public facing</em> on the github.io site.</p>
+
+<h1 id="heres-how-i-did-that">Here’s how I did that.</h1>
+
+<p>I created two separate remote repos to serve this project. <em>Certainly</em> this is incorrect, but for the life of me, the branching on this still escapes me for a <code class="highlighter-rouge">username.github.io</code> page. In one of the remote repos – I called it <code class="highlighter-rouge">d-alex-hughes/website/</code> I host all the files that go into the back end and development of the page. These include the <code class="highlighter-rouge">_post</code> folders, the <code class="highlighter-rouge">_news</code> folders the <code class="highlighter-rouge">_pages</code>, and all the other folder that exist and are the backbone of the ruby build (mine?) side of the process.</p>
+
+<blockquote>
+  <p>This is a full representation of the entire project, and includes the compiled/built files.</p>
+</blockquote>
+
+<p>This repository has everything (Stephan from SNL?) including the back-end and front end files. As such, when I make changes, I commit everything up to the <code class="highlighter-rouge">d-alex-hughes/website/</code> remote repo. If I’m doing development work that I’m not sure will stick, I checkout branches and merge appropriately, but since most of the time changes will be limited to blog <em>content</em> rather than blog <em>structure</em>, this seems a bit of overkill.</p>
+
+<p>The other repository is a repository that is dedicated to the service of the <code class="highlighter-rouge">username.github.io</code> site. For me, this is the site that you’re on currently. In this site go <em>only</em> the files that are going to be served – the <code class="highlighter-rouge">.html</code> files and <code class="highlighter-rouge">.css</code> files that form the website. This repository has an entirely separate history as far as GitHub is concerned. Which means that I have two separate <em>remote::local</em> relationships: One (<code class="highlighter-rouge">website</code>) that holds all the work, and another (<code class="highlighter-rouge">username.github.io</code>) that contains only the public files.</p>
+
+<h1 id="moving-the-files">Moving the files</h1>
+
+<p>How to move the files from one to the other? Because these are independent stacks with independent commits and history, I had to move the files locally between the folders.</p>
+
+<p>To standardize this movement, and the supporting commits, I created a folder <code class="highlighter-rouge">_bin</code> in the top-level of the <code class="highlighter-rouge">website</code> folder, and wrote a bash script <code class="highlighter-rouge">send</code> that “sends” the content to the public folder and commits+pushes this to the <code class="highlighter-rouge">username.github.io</code> site.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/env sh</span>
+
+<span class="nb">echo</span> <span class="s2">"starting to build site"</span> 
+
+<span class="c"># build site files in website </span>
+bundle <span class="nb">exec </span>jekyll build
+git add -A
+git commit -m <span class="s1">'updating site'</span>
+git push origin master
+
+<span class="c"># copy files into serving site folder</span>
+cp -r _site/<span class="k">*</span> ../d-alex-hughes.github.io
+
+<span class="c"># move to serving folder </span>
+<span class="nb">cd</span> ../d-alex-hughes.github.io
+git add -A
+git commit -m <span class="s1">'updating site'</span>
+git push origin master
+
+<span class="nb">echo</span> <span class="s2">"finished building site"</span> 
+</code></pre>
+</div>
+
+<p>When calling <code class="highlighter-rouge">bundle exec jekyll build</code> I’m compiling the site in the <code class="highlighter-rouge">website</code> directory, and then adding all the files (including this post, if not already committed), committing with a message ‘updating site’ and then pushing to the master branch on the <code class="highlighter-rouge">website</code> remote. (As I noted earlier, <code class="highlighter-rouge">website</code> and <code class="highlighter-rouge">username.github.io</code> have separate remotes set up.)</p>
+
+<p>In the next paragraph, I copy all the files (recursively) from the built <code class="highlighter-rouge">_site</code> folder (calling <code class="highlighter-rouge">cp -r ./_site/*</code>) up a directory level and into the public facing <code class="highlighter-rouge">username.github.io</code> directory. This moves only the files which are going to build the site into the public folder.</p>
+
+<p>Finally, in the next paragraph, I navigate to the public folder, add and commit all changes, and the push to <em>this</em> folders’ remote master branch.</p>
+
+<h1 id="flow-in-practice">Flow in practice</h1>
+
+<p>In practice?</p>
+
+<ol>
+  <li>Write some things.</li>
+  <li>Check on the development server using <code class="highlighter-rouge">bundle exec jekyll serve</code>.</li>
+  <li>Save and commit the new post in the normal Git flow.</li>
+  <li>Execute <code class="highlighter-rouge">_bin/send</code></li>
+  <li>Make coffee.</li>
+</ol>
+
+
+  </article>
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2019 Alex Hughes.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+        Last updated: July 2017.
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-XXXXXXXX-X', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>
