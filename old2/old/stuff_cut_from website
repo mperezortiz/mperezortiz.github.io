@@ -1,0 +1,263 @@
+                        <ul class="social-icon">
+                            <li><a href="https://scholar.google.com/citations?user=s0Aou04AAAAJ&hl=en"><i class=""
+                                        aria-hidden="true">Google Scholar</i></a></li>
+                            <li><a href="https://twitter.com/MPerezOrtiz_"><i class=""
+                                        aria-hidden="true">Twitter</i></a></li>
+                            <li><a href="https://es.linkedin.com/in/mar%C3%ADa-p%C3%A9rez-ortiz-857ba290"><i class=""
+                                        aria-hidden="true">LinkedIn</i></a></li>
+                            </center>
+                        </ul>
+                        
+                        
+                        
+                         <hr>
+                                <div class="section-title">
+                                    <h2>Recent selected publications</h2>
+                                </div>
+
+                                <p align="justify">
+                                    <a href="https://arxiv.org/abs/2112.02034"><b>Could AI Democratise Education?
+                                            Socio-Technical Imaginaries of an EdTech Revolution</b></a>, NeurIPS
+                                    workshop on "Machine Learning for
+                                    the
+                                    Developing
+                                    World", 2021.
+                                <blockquote style="font-size:15px">
+
+                                    Summary: In this work we ask what would it take (from a
+                                    socio-technical standpoint) for a
+                                    EdTech
+                                    revolution to provide egalitarian and empowering access to education,
+                                    beyond any political, cultural, language, geographical and learning ability
+                                    barriers.
+                                </blockquote>
+                                </p>
+
+
+
+                                <p align="justify"></p>
+                                <a href="https://www.nature.com/articles/s41467-021-25257-4"><b>Seasonal
+                                        Arctic
+                                        Sea Ice
+                                        Forecasting with Probabilistic Deep Learning</b></a>,
+                                Nature Communications, 2021.
+                                <blockquote style="font-size:15px">
+
+                                    Summary: Anthropogenic warming has led to an unprecedented year-round reduction in
+                                    Arctic sea ice. This has far-reaching
+                                    consequences for indigenous and local communities, polar ecosystems, and global
+                                    climate,
+                                    motivating the need for
+                                    accurate seasonal sea ice forecasts. In this work we
+                                    present a probabilistic deep learning sea ice forecasting system.
+                                </blockquote>
+                                </p>
+
+                                <p align="justify"></p>
+                                <a href="https://arxiv.org/abs/2201.03408"><b>Watch Less and
+                                        Uncover More: Could Navigation Tools Help Users Search and Explore
+                                        Videos?</b></a>,
+                                ACM SIGIR Conference on Human Information Interaction and Retrieval, 2022.
+                                <blockquote style="font-size:15px">
+
+                                    Summary:
+                                    This paper describes a novel user interface tool (the Content Flow Bar) at the
+                                    intersection of AI and HCI, designed to allow users to quickly identify
+                                    relevant fragments within informational videos to facilitate browsing, through a
+                                    cognitively augmented form of
+                                    navigation. We conducted a user study to evaluate how the tool changes the users
+                                    search experience in video retrieval, as well as
+                                    how it supports exploration and information seeking.
+                                </blockquote>
+                                </p>
+
+
+                                <p align="justify"></p>
+                                <a href="https://arxiv.org/pdf/2111.07737.pdf"><b>Progress in Self-Certified Neural
+                                        Networks</b></a>,
+                                NeurIPS workshop on "Bayesian Deep Learning", 2021.
+                                <blockquote style="font-size:15px">
+
+                                    Summary:
+                                    An empirical analysis of the progress towards self-certified neural
+                                    networks (where predictors are trained on all the available data
+                                    and certified via a
+                                    generalisation bound). With this approach we do not need held-out sets for
+                                    certifying the performance of the
+                                    predictor or hyperparameter tuning. We
+                                    show that, at least in the small data
+                                    regime, self-certified learning can be claimed to have been achieved! This is an
+                                    important step towards statistically sound risk certificates of
+                                    performance which do not suffer from sampling bias, having potential for
+                                    governing machine learning algorithms' performance.
+                                </blockquote>
+                                </p>
+
+                                <p align="justify"></p>
+                                <a href="https://jmlr.org/papers/v22/20-879.html"><b>Tighter Risk
+                                        Certificates for
+                                        Neural Networks</b></a>,
+                                Journal of Machine Learning Research, 2021.
+                                <blockquote style="font-size:15px">
+
+                                    Summary:
+                                    This paper presents an empirical study regarding training probabilistic neural
+                                    networks using training objectives
+                                    derived from PAC-Bayes generalisation bounds. Our experiments
+                                    show that our training methods
+                                    produce very tight risk, showing promise not only to guide the learning algorithm
+                                    through
+                                    bounding the risk but also for model
+                                    selection.
+                                </blockquote>
+                                </p>
+
+                                <p align="justify"></p>
+                                <a href="https://ojs.aaai.org/index.php/AAAI/article/view/5395"><b>TrueLearn: A Family
+                                        of Bayesian
+                                        Algorithms to Match Lifelong Learners to Open Educational Resources
+                                    </b></a>,
+                                AAAI, 2020.
+                                <blockquote style="font-size:15px">
+
+                                    Summary:
+                                    In a nutshell, the first transparent and human-centred educational recommender for
+                                    educational
+                                    materials!
+                                </blockquote>
+                                </p>
+
+
+                                <p align="justify"></p>
+                                <a href="https://ieeexplore.ieee.org/abstract/document/8818316"><b>From pairwise
+                                        comparisons and rating to a unified quality scale</b></a>,
+                                IEEE Transactions on Image Processing, 2019.
+                                <blockquote style="font-size:15px">
+
+                                    Summary:
+                                    The goal of psychometric scaling is the quantification of perceptual experiences,
+                                    understanding the relationship between
+                                    an external stimulus, the internal representation and the response.
+                                    We propose a probabilistic framework
+                                    to fuse the outcome of different psychophysical experimental protocols, namely
+                                    rating and pairwise comparisons. Such a method can be used for merging
+                                    datasets of subjective
+                                    nature and for experiments in which
+                                    both measurements are collected. This is a stepping stone for computational social
+                                    choice.
+                                </blockquote>
+                                </p>
+
+
+                                <hr>
+
+                                <div class="section-title">
+                                    <h2>Poems on sustainable AI at my blog "The AI has gone bananas"</h2>
+                                </div>
+
+
+                                <p align=" justify">
+                                    I consider myself a statistically rare mix of science and literature constantly
+                                    trying to
+                                    embrace my
+                                    juxtapositions.
+                                    Recently this has crystallised in a blog named <a href="https://bananas.ai"><b>The
+                                            AI
+                                            has
+                                            gone
+                                            bananas</b></a> where I
+                                    write free verse poems (such as <em>"The future of AI is female"</em>) at the
+                                    intersection of artificial
+                                    intelligence, social issues and environmental sustainability.
+
+                                </p>
+                                <p align="center">
+                                    <img style="vertical-align: bottom;" src="4.JPG" alt="Italian Trulli" width="100%"
+                                        class='center'>
+                                </p>
+
+
+
+
+
+                                <div class="section-title">
+                                    <h2>Research projects I'm involved in</h2>
+                                </div>
+
+                                <p align="justify"></p>
+                                <a href="http://vision.jhu.edu/infopursuit/"><b>MURI Semantic Information Pursuit
+                                        for
+                                        Multimodal Analysis.</b></a>:
+                                This
+                                project focuses on producing a novel framework for characterizing semantic
+                                information
+                                content in multimodal data.
+                                </p>
+
+                                <p align="justify"></p>
+                                <a href="https://www.humane-ai.eu/"><b>HumaneAI. European network of Human-Centered
+                                        Artificial Intelligence</b></a>:
+                                Facilitating a European brand of trustworthy, ethical AI that enhances Human
+                                capabilities and empowers citizens and
+                                society to effectively deal with the challenges of an interconnected globalized
+                                world.
+                                </p>
+
+                                <p align="justify"></p>
+                                <a href="https://platform.x5gon.org/"><b>X5GON. Cross Modal, Cross Cultural, Cross
+                                        Lingual, Cross Domain, and Cross Site Global OER Network
+                                        Artificial Intelligence and Open Educational Resources</b></a>: We are
+                                building
+                                the World's first ecosystem connecting Open Educational Resource sites.
+                                </p>
+
+
+                                <hr>
+
+
+<address>
+                                <strong>Email</strong><br>
+                                <a href="mailto:contact@mariaperezortiz.com">contact@mariaperezortiz.com</a>
+                            </address>
+                            
+                            
+                            A bit about my trajectory:
+                                <ol>
+                                    <li>PhD at University of Cordoba (2012-2015): I developed new ranking
+                                        algorithms,
+                                        and
+                                        applied those in Spanish
+                                        hospitals, creating a model for
+                                        <mark>donor-recipient matching in liver transplantation</mark>.
+                                    </li>
+                                    <li>Research Assistant at Spanish
+                                        National
+                                        Research Council (2013-2015): developed novel <mark>pipelines for
+                                            sustainable
+                                            agriculture using
+                                            drones
+                                            and computer
+                                            vision</mark>.
+                                    </li>
+                                    <li>Assistant Professor at University Loyola Andalucia (2015-2017): Among
+                                        others,
+                                        here I
+                                        worked on a project with the European Space Agency on finding <mark>early
+                                            warning
+                                            signals for climate tipping
+                                            points</mark>. </li>
+                                    <li>After this I did a postdoc at the Computer Lab at the University of Cambridge
+                                        (2017-2018). I worked with neuroscientists to build
+                                        Bayesian active learning models that could learn from our <mark> colour visual
+                                            perception</mark>. The
+                                        research was funded by Apple and it's currently used in many <mark>applications
+                                            in
+                                            computer graphics</mark>.</li>
+                                    <li>I then joined UCL, where I am currently at. So far here I have worked on
+                                        bridging the gap between generalisation analysis theory and practice,
+                                        and also on building <mark>humanly interpretable and interactive recomender
+                                            systems
+                                            for education</mark>.
+                                    </li>
+                                </ol>
+
