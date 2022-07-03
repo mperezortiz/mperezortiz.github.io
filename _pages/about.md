@@ -1,24 +1,31 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: 
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: img_stairs.jpg
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>UCL AI Centre</p>
+    <p>90 High Holborn</p>
+    <p>London, WC1V 6BH</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am Lecturer (Assistant Professor) at the [Dept. of Computer Science](https://www.ucl.ac.uk/computer-science/) at [University College London](https://www.ucl.ac.uk/). Previously, I was Senior Research Fellow at the same department and Research Associate at the [University of Cambridge](https://www.cst.cam.ac.uk/). 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I have worked in the last 12 years in topics related to biomedicine, sustainable agriculture, climate change and environmental modelling, neuroscience and educational technology. Nowadays I am interested in building the technical and responsibility foundations needed to address global sustainability challenges, specifically regarding environmental modelling and policy.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am currently working on bringing sustainability and responsible innovation topics to the computer science arena. I am deputy co-lead of the first [MSc program on AI for Sustainable Development](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/artificial-intelligence-sustainable-development-msc), as well as module leader of two courses at UCL: i) [AI for Sustainable Development](https://www.ucl.ac.uk/module-catalogue/modules/ai-for-sustainable-development-COMP0173) and ii) [Transparent, Accountable and Responsible AI](https://www.ucl.ac.uk/module-catalogue/modules/accountable-transparent-and-responsible-artificial-intelligence-COMP0195).
+
+In 2022, I worked on creating the [first conference on human-centered AI](https://www.hhai-conference.org/), and I am part of its steering committee now. 
+
+
+I sometimes write poems on tech and sustainability in my blog [The AI has gone bananas](http://www.bananas.ai/). 
+
+`Interests`: environmental digital twinning; sustainable agritech for ensuring food security; recommender systems and simulation intelligence for policy making; education for sustainability.
