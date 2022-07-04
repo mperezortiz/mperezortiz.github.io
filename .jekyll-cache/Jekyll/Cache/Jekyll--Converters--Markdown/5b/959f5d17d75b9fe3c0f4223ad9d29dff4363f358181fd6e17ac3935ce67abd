@@ -1,4 +1,4 @@
-I"�n<!-- _pages/publications.md -->
+I"�n<!-- _pages/publications.md -->
 <div class="publications">
   <h2 class="year">2022</h2>
   <ol class="bibliography"><li><!-- _layouts/bib.html -->
@@ -143,7 +143,8 @@
           <!-- Title -->
           <div class="title">Spatio-chromatic contrast sensitivity under mesopic and photopic light levels</div>
           <!-- Author -->
-          <div class="author">Wuerger, Sophie,&nbsp;Ashraf, Maliha,&nbsp;Kim, Minjung,&nbsp;Martinovic, Jasna,&nbsp;Pérez-Ortiz, Marı́a,&nbsp;and Mantiuk, Rafał K
+          <div class="author">Wuerger, Sophie,&nbsp;Ashraf, Maliha,&nbsp;Kim, Minjung,&nbsp;Martinovic, Jasna,&nbsp;
+                  <em>Perez-Ortiz, M.</em>,&nbsp;and Mantiuk, Rafał K
           </div>
 
           <!-- Journal/Book title and date -->
@@ -272,7 +273,8 @@
           <!-- Title -->
           <div class="title">ORCA: a matlab/octave toolbox for ordinal regression</div>
           <!-- Author -->
-          <div class="author">Sánchez-Monedero, Javier,&nbsp;Gutiérrez, Pedro Antonio,&nbsp;and Pérez-Ortiz, Marı́a
+          <div class="author">Sanchez-Monedero, J.,&nbsp;Gutierrez, P.,&nbsp;and <em>Perez-Ortiz, M.</em>
+                
           </div>
 
           <!-- Journal/Book title and date -->
