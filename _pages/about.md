@@ -28,4 +28,4 @@ In 2022, I worked on creating the [first conference on human-centered AI](https:
 
 I sometimes write poems on tech and sustainability in my blog [The AI has gone bananas](http://www.bananas.ai/). 
 
-`Interests`: environmental digital twinning; sustainable agritech for ensuring food security; recommender systems and simulation intelligence for policy making; education for sustainability.
+`Interests`: responsible AI; environmental digital twinning; sustainable agritech; recommender systems and simulation intelligence for policy making; education for sustainability.
