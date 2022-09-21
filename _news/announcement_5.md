@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-06-01 15:59:00-0400
+date: 2022-08-30 15:59:00-0400
 inline: true
 ---
 
-Our workshop on [The (eco)systemic challenges in AI](https://ecosystemic-ai.github.io/) is happening soon at HHAI!
+I am speaking soon at the [London Sustx Tech Summit](https://sustx.co.uk/technology/), [EmpoderaLive](https://live.empodera.org/live/en), [CambridgeEllis](https://www.ellis.eng.cam.ac.uk/) and the University of Tijuana.
