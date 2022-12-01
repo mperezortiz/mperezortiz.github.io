@@ -1,7 +1,33 @@
-I"�n<!-- _pages/publications.md -->
+I"r<!-- _pages/publications.md -->
 <div class="publications">
   <h2 class="year">2022</h2>
   <ol class="bibliography"><li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Sustainability</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="2022" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Power to the Learner: Towards Human-Intuitive and Integrative Recommendations with Open Educational Resources</div>
+          <!-- Author -->
+          <div class="author">Bulathwela, Sahan,&nbsp;Pérez-Ortiz, María,&nbsp;Yilmaz, Emine,&nbsp;and Shawe-Taylor, John
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>Sustainability</em> Sep 2022
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-2 abbr"><abbr class="badge">SciRep</abbr></div>
 
@@ -17,7 +43,7 @@
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            <em>Scientific Reports</em> 2022
+            <em>Scientific Reports</em> Sep 2022
           </div>
         
           <!-- Links/Buttons -->
@@ -51,7 +77,7 @@
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            <em>Nature communications</em> 2021
+            <em>Nature communications</em> Sep 2021
           </div>
         
           <!-- Links/Buttons -->
@@ -83,7 +109,7 @@
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            <em>In 26th International Conference on Intelligent User Interfaces</em> 2021
+            <em>In 26th International Conference on Intelligent User Interfaces</em> Sep 2021
           </div>
         
           <!-- Links/Buttons -->
@@ -115,7 +141,7 @@
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            <em>Journal of Machine Learning Research</em> 2021
+            <em>Journal of Machine Learning Research</em> Sep 2021
           </div>
         
           <!-- Links/Buttons -->
@@ -149,7 +175,7 @@
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            <em>Journal of Vision</em> 2020
+            <em>Journal of Vision</em> Sep 2020
           </div>
         
           <!-- Links/Buttons -->
@@ -181,7 +207,7 @@
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            <em>In Proceedings of the AAAI Conference on Artificial Intelligence</em> 2020
+            <em>In Proceedings of the AAAI Conference on Artificial Intelligence</em> Sep 2020
           </div>
         
           <!-- Links/Buttons -->
@@ -215,7 +241,7 @@
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            <em>IEEE Transactions on Image Processing</em> 2019
+            <em>IEEE Transactions on Image Processing</em> Sep 2019
           </div>
         
           <!-- Links/Buttons -->
@@ -247,7 +273,7 @@
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            <em>Neurocomputing</em> 2019
+            <em>Neurocomputing</em> Sep 2019
           </div>
         
           <!-- Links/Buttons -->
@@ -279,7 +305,7 @@
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            <em>Journal of Machine Learning Research</em> 2019
+            <em>Journal of Machine Learning Research</em> Sep 2019
           </div>
         
           <!-- Links/Buttons -->
@@ -324,7 +350,7 @@ at https://github.com/ayrna/orca.</p>
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            <em>Liver Transplantation</em> 2018
+            <em>Liver Transplantation</em> Sep 2018
           </div>
         
           <!-- Links/Buttons -->
@@ -356,7 +382,7 @@ at https://github.com/ayrna/orca.</p>
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            <em>In 2018 International Joint Conference on Neural Networks (IJCNN)</em> 2018
+            <em>In 2018 International Joint Conference on Neural Networks (IJCNN)</em> Sep 2018
           </div>
         
           <!-- Links/Buttons -->
